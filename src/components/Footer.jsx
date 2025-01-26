@@ -17,11 +17,17 @@ const Footer=()=>{
     return(
         <>
             <div className="bg-[#151518] flex flex-col place-items-center  h-auto min-h-[200px]: gap-2 font-jost pt-4 pb-4">
+
+                <div className="mt-2 flex gap-10 mob-sm:flex mob-sm:flex-col mob-sm:gap-2 mob-sm:place-items-center rounded-md mob-sm:border-0">
+                    <div className=" text-white p-2 rounded-md bg-black border-gray-400 border-2">{localTime}</div>
+                    <div className=" text-gray-200 p-2 rounded-md border-gray-400 border-2">{screenSize.width} x {screenSize.height}</div>
+                </div> 
                 
-                <div className="mob-sm:w-[15rem] mob-sm:flex-col m-auto">
+                <div className="mob-sm:w-[15rem] mob-sm:flex-col m-auto mt-2">
+                    <hr/>
                     <p className="mt-2 font-medium text-center mb-4 text-[1.2rem] mob-sm:text-[1rem]"><FaLink className="inline"/> Connect with me at</p>
 
-                    <ul className='flex flex-row justify-center m-2 pb-4 mob-sm:flex-row mob-sm:justify-center border-b-1'>
+                    <ul className='flex flex-row justify-center m-2 pb-2 mob-sm:flex-row mob-sm:justify-center'>
                         <li className='px-4 hover:scale-125 mob-sm:px-2'><a href="https://www.github.com/pnvshravan"><FaGithub alt="Github" className="size-[2rem] mob-sm:size-[1.75rem]"/></a></li> 
                         <li className='px-4 hover:scale-125 mob-sm:px-2'><a href="https://www.linkedin.com/in/pnvshravan"><FaLinkedin alt="LinkedIn" className="size-[2rem] mob-sm:size-[1.75rem]"/></a></li>
                         <li className='px-4 hover:scale-125 mob-sm:px-2'><a href="https://x.com/pnvshravan"><FaXTwitter alt="X" className="size-[2rem] mob-sm:size-[1.75rem]"/></a></li>
@@ -33,11 +39,7 @@ const Footer=()=>{
                         <span className="inline-flex items-center gap-1">{DateTime.local().year} </span>
                         <span>&#169; <i>Proddatur Naga Venkata Shravan</i></span>
                     </p>
-                </div>
-                <div className="mt-2 flex gap-10 mob-sm:flex mob-sm:flex-col mob-sm:gap-2 mob-sm:place-items-center border-gray-400 border-2 rounded-md mob-sm:border-0">
-                    <div className=" text-gray-400 p-2 rounded-sm ">{localTime}</div>
-                    <div className=" text-gray-400 p-2 rounded-sm ">{screenSize.width} x {screenSize.height}</div>
-                </div>  
+                </div>          
             </div>        
         </>
     );
