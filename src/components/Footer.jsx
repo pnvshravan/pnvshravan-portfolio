@@ -4,7 +4,7 @@ import { FaLinkedin } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa6";
 import { FaLink } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
-import resolution from "../utils/resolution";
+import resolution from "../utils/Resolution";
 import { getLocalTime} from "../utils/DateAndTime";
 import { DateTime } from "luxon";
 
