@@ -1,0 +1,49 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+
+
+@layer base{
+    h1{
+        @apply text-2xl font-semibold font-jost;
+    }
+    h2{
+        @apply text-xl font-semibold font-jost;
+    }
+    h3{
+        @apply text-lg font-semibold font-jost;
+    }
+    h4{
+        @apply text-[1rem] font-semibold font-jost;
+    }
+    h5{
+        @apply text-[0.75rem] font-semibold font-jost;
+    }
+    h6{
+        @apply text-[0.5rem] font-semibold font-jost;
+    }
+    
+}
+
+/*-----------------*/
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+} these are already included in preflight of v4*/ 
+body{
+    font-family: "Montserrat", serif; 
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #060606;  /*Noir Fiction 150811*/ /*Smoky 0A0B06*/
+    color: #f5f5f5;/*whitesmoke*/
+    
+    /* background-image:repeating-linear-gradient(45deg, #0A0B06 0, #343434 2px, transparent 0, transparent 50%);
+    background-size:25px 25px; */
+}
+
+.skills-list li{
+    @apply border-2 border-gray-600 p-[4px] rounded-md list-none pointer-events-none
+}
