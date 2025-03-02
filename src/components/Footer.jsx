@@ -4,15 +4,40 @@ import { FaLinkedin } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa6";
 import { FaLink } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
-import resolution from "../utils/Resolution";
 import { getLocalTime} from "../utils/DateAndTime";
 import { DateTime } from "luxon";
 
 
 const Footer=()=>{
-    let screenSize = resolution();
 
     let localTime = getLocalTime();
+
+
+    const links =[
+        {
+            alt: "Github",
+            link: "https://www.github.com/pnvshravan",
+        },
+        {
+            alt: "LinkedIn",
+            link: "https://www.linkedin.com/in/pnvshravan",
+        },
+        {
+            alt:"X (Twitter)",
+            link:"https://x.com/pnvshravan"
+        },
+        {
+            alt: "",
+            link: "https://www.instagram.com/pnv_shravan?igsh=MTNqNGkxY3llNjdoMA=="
+        },
+        {
+            alt:"",
+            link:"mailto:pnvshravan@gmail.com"
+        }
+    ]
+
+    const linksStyle = 'px-4 hover:scale-125 mob-sm:px-2';
+    const linkIconStyle = 'size-[2rem] mob-sm:size-[1.75rem]';
 
     return(
         <>
@@ -20,7 +45,6 @@ const Footer=()=>{
 
                 <div className="mt-2 flex gap-10 mob-sm:flex mob-sm:flex-col mob-sm:gap-2 mob-sm:place-items-center rounded-md mob-sm:border-0">
                     <div className=" text-white p-2 rounded-md bg-black border-gray-400 border-2">{localTime}</div>
-                    <div className=" text-gray-200 p-2 rounded-md border-gray-400 border-2">{screenSize.width} x {screenSize.height}</div>
                 </div> 
                 
                 <div className="mob-sm:w-[15rem] mob-sm:flex-col m-auto mt-2">
@@ -30,7 +54,7 @@ const Footer=()=>{
                     <ul className='flex flex-row justify-center m-2 pb-2 mob-sm:flex-row mob-sm:justify-center'>
                         <li className='px-4 hover:scale-125 mob-sm:px-2'><a href="https://www.github.com/pnvshravan"><FaGithub alt="Github" className="size-[2rem] mob-sm:size-[1.75rem]"/></a></li> 
                         <li className='px-4 hover:scale-125 mob-sm:px-2'><a href="https://www.linkedin.com/in/pnvshravan"><FaLinkedin alt="LinkedIn" className="size-[2rem] mob-sm:size-[1.75rem]"/></a></li>
-                        <li className='px-4 hover:scale-125 mob-sm:px-2'><a href="https://x.com/pnvshravan"><FaXTwitter alt="X" className="size-[2rem] mob-sm:size-[1.75rem]"/></a></li>
+                        <li className='px-4 hover:scale-125 mob-sm:px-2'><a href="https://x.com/pnvshravan"><FaXTwitter alt="X (Twitter)" className="size-[2rem] mob-sm:size-[1.75rem]"/></a></li>
                         <li className='px-4 hover:scale-125 mob-sm:px-2'><a href="https://www.instagram.com/pnv_shravan?igsh=MTNqNGkxY3llNjdoMA=="><FaInstagram alt="Instagram" className="size-[2rem] mob-sm:size-[1.75rem]"/></a></li> 
                         <li className='px-4 hover:scale-125 mob-sm:px-2'><a href="mailto:pnvshravan@gmail.com"><IoMail alt="Email" className="size-[2rem] mob-sm:size-[1.75rem]"/></a></li>
                     </ul>
