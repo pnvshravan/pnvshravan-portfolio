@@ -4,6 +4,7 @@ import { FaLinkedin } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa6";
 import { FaLink } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
+import { GrArticle } from "react-icons/gr";
 import { getLocalTime} from "../utils/DateAndTime";
 import { DateTime } from "luxon";
 
@@ -12,33 +13,54 @@ const Footer=()=>{
 
     let localTime = getLocalTime();
 
+    const linkStyle ={
+        style1: 'px-4 hover:scale-125 mob-sm:px-2',
+        style2: 'size-[2rem] mob-sm:size-[1.75rem]'
+    }
 
+    const iconsMap = {
+        FaGithub: FaGithub,
+        FaLinkedin: FaLinkedin,
+        FaXTwitter: FaXTwitter,
+        FaInstagram: FaInstagram,
+        IoMail: IoMail,
+        GrArticle: GrArticle
+      };
+    
     const links =[
         {
+            iconName: 'FaGithub',
             alt: "Github",
             link: "https://www.github.com/pnvshravan",
         },
         {
+            iconName:'FaLinkedin',
             alt: "LinkedIn",
             link: "https://www.linkedin.com/in/pnvshravan",
         },
         {
+            iconName:'FaXTwitter',
             alt:"X (Twitter)",
             link:"https://x.com/pnvshravan"
         },
         {
-            alt: "",
+            iconName:'FaInstagram',
+            alt: "Instagram",
             link: "https://www.instagram.com/pnv_shravan?igsh=MTNqNGkxY3llNjdoMA=="
         },
         {
-            alt:"",
+            iconName: 'IoMail',
+            alt:"Email",
             link:"mailto:pnvshravan@gmail.com"
+        },
+        {
+            iconName : 'GrArticle',
+            alt: "Blog",
+            link: '/blog'
         }
     ]
 
-    const linksStyle = 'px-4 hover:scale-125 mob-sm:px-2';
-    const linkIconStyle = 'size-[2rem] mob-sm:size-[1.75rem]';
-
+ 
     return(
         <>
             <div className="bg-[#151518] flex flex-col place-items-center  h-auto min-h-[200px]: gap-2 font-jost pt-4 pb-4">
@@ -50,13 +72,19 @@ const Footer=()=>{
                 <div className="mob-sm:w-[15rem] mob-sm:flex-col m-auto mt-2">
                     <hr/>
                     <p className="mt-2 font-medium text-center mb-4 text-[1.2rem] mob-sm:text-[1rem]"><FaLink className="inline"/> Connect with me at</p>
-
+                        
                     <ul className='flex flex-row justify-center m-2 pb-2 mob-sm:flex-row mob-sm:justify-center'>
-                        <li className='px-4 hover:scale-125 mob-sm:px-2'><a href="https://www.github.com/pnvshravan"><FaGithub alt="Github" className="size-[2rem] mob-sm:size-[1.75rem]"/></a></li> 
-                        <li className='px-4 hover:scale-125 mob-sm:px-2'><a href="https://www.linkedin.com/in/pnvshravan"><FaLinkedin alt="LinkedIn" className="size-[2rem] mob-sm:size-[1.75rem]"/></a></li>
-                        <li className='px-4 hover:scale-125 mob-sm:px-2'><a href="https://x.com/pnvshravan"><FaXTwitter alt="X (Twitter)" className="size-[2rem] mob-sm:size-[1.75rem]"/></a></li>
-                        <li className='px-4 hover:scale-125 mob-sm:px-2'><a href="https://www.instagram.com/pnv_shravan?igsh=MTNqNGkxY3llNjdoMA=="><FaInstagram alt="Instagram" className="size-[2rem] mob-sm:size-[1.75rem]"/></a></li> 
-                        <li className='px-4 hover:scale-125 mob-sm:px-2'><a href="mailto:pnvshravan@gmail.com"><IoMail alt="Email" className="size-[2rem] mob-sm:size-[1.75rem]"/></a></li>
+                    {
+                        links.map((cur, index)=>{
+                            let Icon = iconsMap[cur.iconName];
+                            return(
+                                <li className={`${linkStyle.style1}`} key={index}>
+                                    <a href={`${cur.link}`}>
+                                        <Icon alt={`${cur.alt}`} className={`${linkStyle.style2}`}/>                                 
+                                    </a>
+                                </li>
+                            );
+                        })}
                     </ul>
                     
                     <p className="mt-2 text-center flex items-center justify-center gap-2 mob-sm:flex-col"> 
