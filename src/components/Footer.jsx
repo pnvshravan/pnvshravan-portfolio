@@ -56,7 +56,7 @@ const Footer=()=>{
         {
             iconName : 'GrArticle',
             alt: "Blog",
-            link: '/blog'
+            link: ''
         }
     ]
 
