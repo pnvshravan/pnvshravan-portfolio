@@ -51,12 +51,12 @@ const Footer=()=>{
         {
             iconName: 'IoMail',
             alt:"Email",
-            link:"mailto:pnvshravan@gmail.com"
+            link:"mailto:pnvshravan786@outlook.com"
         },
         {
             iconName : 'GrArticle',
             alt: "Blog",
-            link: ''
+            link: 'https://pnvshravan.hashnode.dev'
         }
     ]
 
@@ -79,7 +79,7 @@ const Footer=()=>{
                             let Icon = iconsMap[cur.iconName];
                             return(
                                 <li className={`${linkStyle.style1}`} key={index}>
-                                    <a href={`${cur.link}`}>
+                                    <a href={`${cur.link}`} target="_blank" title={`${cur.alt}`}>
                                         <Icon alt={`${cur.alt}`} className={`${linkStyle.style2}`}/>                                 
                                     </a>
                                 </li>
