@@ -24,7 +24,7 @@ const Section2=()=>{
                     <h1 className="px-2">Experience</h1>
                     <div className="flex justify-between gap-6">
                         <a href="https://www.linkedin.com/company/heinwig/" target="_blank" className="hover:underline"><h3 className="px-2 font-medium">Heinwig Technologies Pvt. Ltd</h3></a>
-                        <p className="tablet:ml-12 font-light">(Dec 2024 - Present)</p>
+                        <p className="tablet:ml-12 font-light">(Dec 2024 - May 2025)</p>
                     </div>    
                     <p className="px-2"><i>Software Engineer Intern</i></p>
                 </div>
