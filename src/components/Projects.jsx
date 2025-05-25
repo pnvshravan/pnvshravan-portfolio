@@ -33,7 +33,7 @@ const Projects=()=>{
                         <p className="mt-4"><i>(React, CSS3)</i></p>
                         <span className="inline-flex gap-2 mt-4 place-items-center">
                             Links: 
-                            <a href="https://pnvshravan-portfolio.vercel.app/" target="_blank" className="hover:scale-125"><FaGithub size={20}/></a>
+                            <a href="https://positivus-replica-website.vercel.app/" target="_blank" className="hover:scale-125"><FaGithub size={20}/></a>
                         </span>
                     </div>
                 </div> 
