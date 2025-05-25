@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      typography: {
+        
+      },
       screens:{
         'mob-sm': { min: '320px', max: '425.8px' },
         'tablet': {min: '426px', max: '767.8px'},
@@ -13,9 +16,11 @@ export default {
       fontFamily:{
         monte : ["Montserrat","serif"],
         jost : ["Jost","serif"]
-      }
+      },
+      
     },
   },
+
   plugins: [],
 }
 

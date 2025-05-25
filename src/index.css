@@ -2,7 +2,6 @@
 @config "../tailwind.config.js";
 
 
-
 @layer base{
     h1{
         @apply text-2xl font-semibold font-jost;
@@ -46,4 +45,9 @@ body{
 
 .skills-list li{
     @apply border-2 border-gray-600 p-[4px] rounded-md list-none pointer-events-none
+}
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
 }

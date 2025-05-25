@@ -17,8 +17,8 @@ const Home=()=>{
                                 I am <b>Proddatur Naga Venkata Shravan</b>, a recent graduate with a B.E degree in (CSE) from Visvesvaraya Technological University (VTU), Belagavi.
                             </p>
                         </div>
-                        <button className="border-gray-400 border-2 rounded-md p-1.5 bg-gray-700 hover:ring-3 hover:ring-gray-400">
-                            <a href="https://drive.google.com/file/d/1dZzoKs4OXcYG7U8v0lpZ8FYxKtxZPCZR/view?usp=drive_link" target="_blank" className="hover:cursor-pointer"><FiDownloadCloud className="inline"/> Resume</a>
+                        <button className="border-gray-400 border-2 rounded-md p-1.5 bg-gray-700 hover:cursor-pointer hover:ring-3 hover:ring-gray-400">
+                            <a href="https://drive.google.com/file/d/12LfLK-IKkJ517Hb_WydEp_L37MbXETmS/view?usp=drive_link" target="_blank" ><FiDownloadCloud className="inline"/> Resume</a>
                         </button>
                     </div>
                 </div>   
