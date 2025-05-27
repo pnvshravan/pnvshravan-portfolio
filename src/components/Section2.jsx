@@ -23,8 +23,8 @@ const Section2=()=>{
                 <div className=" mb-2 rounded-md bg-[#233A6C] p-2 w-[40rem] hover:ring-3 hover:ring-teal-400 mob-sm:w-[15rem] tablet:w-[25rem]">
                     <h1 className="px-2">Experience</h1>
                     <div className="flex justify-between gap-6">
-                        <a href="https://www.linkedin.com/company/heinwig/" target="_blank" className="hover:underline"><h3 className="px-2 font-medium">Heinwig Technologies Pvt. Ltd</h3></a>
-                        <p className="tablet:ml-12 font-light">(Dec 2024 - May 2025)</p>
+                        <a href="https://www.linkedin.com/company/heinwig/" target="_blank" className="hover:underline"><h3 className="px-2 font-semibold">Heinwig Technologies Pvt. Ltd</h3></a>
+                        <p className="tablet:ml-12 font-medium">(Dec 2024 - May 2025)</p>
                     </div>    
                     <p className="px-2"><i>Software Engineer Intern</i></p>
                 </div>
