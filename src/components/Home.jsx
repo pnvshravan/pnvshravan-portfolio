@@ -18,7 +18,7 @@ const Home=()=>{
                             </p>
                         </div>
                         <button className="border-gray-400 border-2 rounded-md p-1.5 bg-gray-700 hover:cursor-pointer hover:ring-3 hover:ring-gray-400">
-                            <a href="https://drive.google.com/file/d/12LfLK-IKkJ517Hb_WydEp_L37MbXETmS/view?usp=drive_link" target="_blank" ><FiDownloadCloud className="inline"/> Resume</a>
+                            <a href="https://drive.google.com/file/d/1gVmV0hGCVZf9cAxVpxyQr8klMNC0Oc66/view?usp=sharing" target="_blank" ><FiDownloadCloud className="inline"/> Resume</a>
                         </button>
                     </div>
                 </div>   

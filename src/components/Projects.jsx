@@ -8,11 +8,18 @@ const Projects=()=>{
     const projs_list =[
         {
             title:'Plant Recognition and Gardening Support System',
-            desc:'Python, FastAPI, YOLOv8, AWS, REST API',
+            desc:'Python, FastAPI, ML, YOLOv8, Docker, AWS, REST API, Flutter, Dart',
             github: '',
             dlylink:'https://play.google.com/store/apps/details?id=com.miyu.plantai',
             docs:'https://ijirt.org/Article?manuscript=165047'
         
+        },
+        {
+            title:'Task Management System',
+            desc:'Java, Spring Boot, Hibernate, H2, JPA, Git, Maven, REST API',
+            github: 'https://github.com/pnvshravan/Tasks-case-study',
+            dlylink:'',
+            docs: ''
         },
         {
             title:'Unit Converter',
@@ -24,12 +31,13 @@ const Projects=()=>{
         },
         {
             title:'Postivius Landing Page',
-            desc:'React, CSS3',
+            desc:'ReactJs, CSS3, Figma',
             github: 'https://github.com/pnvshravan/positivus-replica-website',
             dlylink:'https://positivus-replica-website.vercel.app/',
             docs: ''
          
-        }
+        },
+        
     ]
 
 return (
