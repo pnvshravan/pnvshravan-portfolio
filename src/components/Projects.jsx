@@ -1,6 +1,7 @@
 import { FaLink } from "react-icons/fa6";
 import { FaBook } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa6";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 
 const Projects=()=>{
@@ -70,22 +71,21 @@ return (
                     </div>
                  ))}
             </div>
+            <br />
+            <div className="mb-2 mt-10 rounded-md bg-[#233A6C] p-2 w-[40rem] hover:ring-3 hover:ring-teal-400 mob-sm:w-[15rem] tablet:w-[25rem]">
+                <h1 className="mb-4">Publications</h1>
+                <a href="https://ijirt.org/Article?manuscript=165047" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="hover:underline font-medium flex items-start gap-2">
+                    <FaArrowRightLong className="mt-1 shrink-0"/>
+                    Plant Recognition using CNN and Gardening Support System using IoT (2024)
+                </a>
+            </div>
         </div>
     </>
-);
+  );
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 export default Projects;
