@@ -77,7 +77,7 @@ return (
                 <a href="https://ijirt.org/Article?manuscript=165047" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="hover:underline font-medium flex items-start gap-2">
+                className="hover:underline font-medium flex items-start gap-2 mob-sm:underline mob-sm:underline-offset-4">
                     <FaArrowRightLong className="mt-1 shrink-0"/>
                     Plant Recognition using CNN and Gardening Support System using IoT (2024)
                 </a>

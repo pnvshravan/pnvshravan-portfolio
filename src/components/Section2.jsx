@@ -10,7 +10,7 @@ const skillsData =[
 const joblist = [
     {
        cname: "Wipro Limited",
-       position: "Project Engineer",
+       position: "Developer - L1",
        timeline: "June 2025 - Present",
        link: "https://www.wipro.com/",
        desc: "" 
@@ -47,18 +47,18 @@ const Section2=()=>{
                     {/* {&#9679;} */}
                 </div>
                 <div className="mb-2 rounded-md bg-[#233A6C] p-2 w-[40rem] hover:ring-3 hover:ring-teal-400 mob-sm:w-[15rem] tablet:w-[25rem]">
-                    <h1 className="px-2 text-center">Experience</h1>
+                    <h1 className="px-2 text-center mob-sm:mb-3">Experience</h1>
                     {
                         joblist.map((item,index)=>(
                             <div key={index}>
-                                <div className="flex justify-between gap-6 mob-sm:flex mob-sm:flex-col mob-sm:gap-2 mob-sm:items-center">
+                                <div className="flex justify-between gap-6 mob-sm:flex mob-sm:flex-col mob-sm:gap-2">
                                     <a href={`${item.link}`} target="_blank" className="hover:underline" rel="noopener noreferrer">
-                                        <h3 className="px-2 font-semibold">{item.cname}</h3>
+                                        <h3 className="px-2 font-semibold mob-sm:px-0">{item.cname}</h3>
                                     </a>
                                     <p className="font-medium">( {item.timeline} )</p>
                                 </div>
                                 <div>
-                                    <p className="px-2"><i>{item.position}</i></p> 
+                                    <p className="px-2 mob-sm:px-0"><i>{item.position}</i></p> 
                                     {
                                         Array.isArray(item.desc) && item.desc.map((cur, index2)=>(
                                             <div className="p-2 gap-2 flex flex-col" key={index2}>
