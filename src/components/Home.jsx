@@ -1,5 +1,5 @@
 import { FiDownloadCloud } from "react-icons/fi";
-import self from "../assets/self-pp.jpeg"; //apple-emoji-pp
+import self from "../assets/self-pp.webp"; //apple-emoji-pp
 
 const Home=()=>{
     return (
@@ -14,11 +14,11 @@ const Home=()=>{
                         <div className="mb-2 rounded-md bg-[#233A6C] p-2 max-w-[30rem] hover:ring-3 hover:ring-teal-400 mob-sm:w-[15rem] ">
                             <h1 className="px-2">About Me</h1>
                             <p className="w-auto mb-2 p-2">
-                                I am <b>Proddatur Naga Venkata Shravan</b>, a recent graduate with a B.E degree in (CSE) from Visvesvaraya Technological University (VTU), Belagavi.
+                                I am <b>Naga Venkata Shravan Proddatur</b>, a recent graduate with a B.E degree in (CSE) from Visvesvaraya Technological University (VTU), Belagavi.
                             </p>
                         </div>
                         <button className="border-gray-400 border-2 rounded-md p-1.5 bg-gray-700 hover:cursor-pointer hover:ring-3 hover:ring-gray-400">
-                            <a href="https://drive.google.com/file/d/18fdpD8dGZ1ExMwJ97OCOojQQblTBmOJg/view?usp=sharing" 
+                            <a href="https://drive.google.com/file/d/1zNbA67_tPTq1gQkqGBR68KPvEL8KShuK/view?usp=drive_link" 
                             target="_blank" rel="noopener noreferrer"><FiDownloadCloud className="inline"/> Resume</a>
                         </button>
                     </div>

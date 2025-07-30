@@ -73,7 +73,7 @@ return (
             </div>
             <br />
             <div className="mb-2 mt-10 rounded-md bg-[#233A6C] p-2 w-[40rem] hover:ring-3 hover:ring-teal-400 mob-sm:w-[15rem] tablet:w-[25rem]">
-                <h1 className="mb-4">Publications</h1>
+                <h1 className="mb-4 px-2">Publications</h1>
                 <a href="https://ijirt.org/Article?manuscript=165047" 
                 target="_blank" 
                 rel="noopener noreferrer"

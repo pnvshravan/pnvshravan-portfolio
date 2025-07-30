@@ -10,7 +10,7 @@ const skillsData =[
 const joblist = [
     {
        cname: "Wipro Limited",
-       position: "Developer - L1",
+       position: "Project Engineer",
        timeline: "June 2025 - Present",
        link: "https://www.wipro.com/",
        desc: "" 
@@ -35,15 +35,13 @@ const Section2=()=>{
         <>
             <div className="p-6 h-auto min-h-[20rem] gap-4 flex flex-col items-center mob-sm:flex-col mob-sm:items-center">
                 <div className="border-gray-300 border-2 p-2 rounded-md w-[40rem] mob-sm:w-[15rem] tablet:w-[25rem] bg-gray-900">
-                    <h1 className="px-2">
-                        Skills
-                    </h1>
+                    <h1 className="px-2">Skills </h1>
+                    <ul className="skills-list inline-flex flex-wrap">
                     {
                         skillsData.map((item, index)=>(
-                            <div className="p-2 gap-2 skills-list inline-flex" key={index}>
-                                <li className="bg-gray-600 font-medium flex items-center gap-1"><FaCircle size={6}/> {item}</li>
-                            </div>
-                    ))}     
+                            <li className="m-2 bg-gray-600 font-medium flex items-center gap-[6px]" key={index}><FaCircle size={6}/> {item}</li>
+                    ))}
+                    </ul>
                     {/* {&#9679;} */}
                 </div>
                 <div className="mb-2 rounded-md bg-[#233A6C] p-2 w-[40rem] hover:ring-3 hover:ring-teal-400 mob-sm:w-[15rem] tablet:w-[25rem]">
