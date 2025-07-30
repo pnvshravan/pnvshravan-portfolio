@@ -13,7 +13,7 @@ const Home=()=>{
                     <div>
                         <div className="mb-2 rounded-md bg-[#233A6C] p-2 max-w-[30rem] hover:ring-3 hover:ring-teal-400 mob-sm:w-[15rem] ">
                             <h1 className="px-2">About Me</h1>
-                            <p className="w-auto mb-2 p-2">
+                            <p className="w-auto p-2">
                                 I am <b>Naga Venkata Shravan Proddatur</b>, a recent graduate with a B.E degree in (CSE) from Visvesvaraya Technological University (VTU), Belagavi.
                             </p>
                         </div>
